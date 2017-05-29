@@ -4,7 +4,7 @@
     <Description>MicroBus.Sagas.Autofac.Tests</Description>
     <VersionPrefix>1.0.0</VersionPrefix>
     <Authors>Daniel Little</Authors>
-    <TargetFramework>netcoreapp1.0</TargetFramework>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
     <AssemblyName>Enexure.MicroBus.Saga.Autofac.Tests</AssemblyName>
     <PackageId>Enexure.MicroBus.Saga.Autofac.Tests</PackageId>
     <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
@@ -17,6 +17,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Enexure.MicroBus.Sagas.Infrastructure\Enexure.MicroBus.Sagas.Infrastructure.csproj" />
     <ProjectReference Include="..\Enexure.MicroBus\Enexure.MicroBus.csproj" />
     <ProjectReference Include="..\Enexure.MicroBus.Autofac\Enexure.MicroBus.Autofac.csproj" />
     <ProjectReference Include="..\Enexure.MicroBus.InfrastructureContracts\Enexure.MicroBus.InfrastructureContracts.csproj" />
@@ -25,11 +26,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0-preview-20170106-08" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0-beta5-build1225" />
-    <PackageReference Include="Autofac" Version="4.0.0-rc2-240" />
-    <PackageReference Include="xunit" Version="2.2.0-beta5-build3474" />
-    <PackageReference Include="FluentAssertions" Version="4.1.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0-preview-20170517-02" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.0-beta2-build1317" />
+    <PackageReference Include="Autofac" Version="4.6.0" />
+    <PackageReference Include="xunit" Version="2.3.0-beta2-build3683" />
+    <PackageReference Include="FluentAssertions" Version="4.19.2" />
   </ItemGroup>
 
   <ItemGroup>
