@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Contains Saga Infrastructure addons for MicroBus</Description>
+    <VersionPrefix>1.0.0.1</VersionPrefix>
+    <Authors>Topsey</Authors>
+    <TargetFrameworks>netcoreapp1.1</TargetFrameworks>
+    <AssemblyName>Enexure.MicroBus.Sagas.Infrastructure</AssemblyName>
+    <PackageId>Enexure.MicroBus.Sagas.Infrastructure</PackageId>
+    <PackageTags>MicroBus;Mediator;Saga;Bus</PackageTags>
+    <!--<PackageIconUrl>https://raw.github.com/Lavinski/Enexure.MicroBus/master/Logo.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/Lavinski/Enexure.MicroBus/</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/Lavinski/Enexure.MicroBus/blob/master/License.md</PackageLicenseUrl>-->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\src\Enexure.MicroBus.Sagas\Enexure.MicroBus.Sagas.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.EntityFrameworkCore">
+      <HintPath>..\..\..\Users\Ian\.nuget\packages\microsoft.entityframeworkcore\1.1.1\lib\netstandard1.3\Microsoft.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Relational">
+      <HintPath>..\..\..\Users\Ian\.nuget\packages\microsoft.entityframeworkcore.relational\1.1.1\lib\netstandard1.3\Microsoft.EntityFrameworkCore.Relational.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
+

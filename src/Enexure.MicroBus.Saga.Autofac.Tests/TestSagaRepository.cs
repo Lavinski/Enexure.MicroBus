@@ -2,16 +2,20 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Enexure.MicroBus.Sagas;
+using Enexure.MicroBus.Sagas.Infrastructure.Context;
+using Enexure.MicroBus.Sagas.Infrastructure.Model;
 
 namespace Enexure.MicroBus.Saga.Autofac.Tests
 {
 	public class TestSagaRepository : ISagaRepository<TestSaga>
 	{
-		Dictionary<Guid, TestSaga> sagas = new Dictionary<Guid, TestSaga>();
+	    private readonly MicrobusSagaContext _context;
+
+        Dictionary<Guid, TestSaga> sagas = new Dictionary<Guid, TestSaga>();
 
 		public Task CompleteAsync(TestSaga saga)
 		{
-			sagas.Remove(saga.Id);
+            sagas.Remove(saga.Id);
 			return Task.CompletedTask;
 		}
 

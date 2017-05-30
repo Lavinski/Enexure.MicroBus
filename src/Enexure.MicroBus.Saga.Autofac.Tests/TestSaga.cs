@@ -13,7 +13,9 @@ namespace Enexure.MicroBus.Saga.Autofac.Tests
 		public Guid Id { get; protected set; }
 		public bool IsCompleted { get; protected set; }
 
-		public async Task Handle(SagaStartingAEvent @event)
+	    public char[] IsNotCompleted { get; protected set; }
+
+        public async Task Handle(SagaStartingAEvent @event)
 		{
 			Id = @event.CorrelationId;
 		}

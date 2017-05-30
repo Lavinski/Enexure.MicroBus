@@ -4,8 +4,7 @@ using System.Threading.Tasks;
 
 namespace Enexure.MicroBus.Sagas
 {
-	public interface ISagaRepository<TSaga>
-		where TSaga : class, ISaga
+	public interface ISagaRepository<TSaga> where TSaga : class, ISaga
 	{
 		Task CreateAsync(TSaga saga);
 		Task UpdateAsync(TSaga saga);
