@@ -36,7 +36,7 @@ namespace WZHi.Hangfire.Microbus.Integration.Extensions
         {
             using (var db = HangfireMicorbusExtension.Context)
             {
-                await db.MicrobusRrequests.AddAsync(new MicrobusRequest
+                await db.MicrobusRequests.AddAsync(new MicrobusRequest
                 {
                     Id = id,
                     Body = JsonConvert.SerializeObject(command, new JsonSerializerSettings

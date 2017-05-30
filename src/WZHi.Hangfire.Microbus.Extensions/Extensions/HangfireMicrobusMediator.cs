@@ -37,7 +37,7 @@ namespace WZHi.Hangfire.Microbus.Integration.Extensions
             {
                 try
                 {
-                    var data = await db.MicrobusRrequests.SingleAsync(s => s.Id == id);
+                    var data = await db.MicrobusRequests.SingleAsync(s => s.Id == id);
 
                     var request = JsonConvert.DeserializeObject<ICommand>(data.ToString(),
                         new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All });

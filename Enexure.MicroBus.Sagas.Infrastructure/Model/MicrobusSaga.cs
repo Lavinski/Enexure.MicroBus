@@ -21,7 +21,6 @@ namespace Enexure.MicroBus.Sagas.Infrastructure.Model
 
         public DateTime ExpireAt { get; set; }
         public DateTime CreatedAt { get; set; }
-
         public DateTime CompletedAt { get; set; }
         public bool IsDirty { get; set; }
     }

@@ -19,6 +19,10 @@ namespace Enexure.MicroBus.Sagas.Infrastructure.Context
         public MicrobusSagaContext(DbContextOptions<MicrobusSagaContext> options)
             : base(options)
         {
+            
+
+            Database.SetInitializer(new CreateDatabaseIfNotExists<MicrobusSagaContext>());
+
         }
 
         public DbSet<MicrobusSaga> MicrobusSagas { get; set; }

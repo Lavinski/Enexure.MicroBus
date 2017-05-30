@@ -21,7 +21,7 @@ namespace WZHi.Hangfire.Microbus.Integration.Infrastructure
         {
         }
 
-        public DbSet<MicrobusRequest> MicrobusRrequests { get; set; }
+        public DbSet<MicrobusRequest> MicrobusRequests { get; set; }
 
         public Task<int> SaveChangesAsync()
         {

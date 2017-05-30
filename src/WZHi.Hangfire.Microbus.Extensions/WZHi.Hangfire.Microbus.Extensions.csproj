@@ -16,15 +16,10 @@
   <ItemGroup>
     <PackageReference Include="Enexure.MicroBus" Version="3.5.0" />
     <PackageReference Include="Hangfire" Version="1.6.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="1.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="1.1.2" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Reference Include="Microsoft.EntityFrameworkCore">
-      <HintPath>..\..\..\Users\Ian\.nuget\packages\microsoft.entityframeworkcore\1.1.1\lib\netstandard1.3\Microsoft.EntityFrameworkCore.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.EntityFrameworkCore.Relational">
-      <HintPath>..\..\..\Users\Ian\.nuget\packages\microsoft.entityframeworkcore.relational\1.1.1\lib\netstandard1.3\Microsoft.EntityFrameworkCore.Relational.dll</HintPath>
-    </Reference>
-  </ItemGroup>
+
 
 </Project>

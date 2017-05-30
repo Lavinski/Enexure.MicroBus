@@ -15,7 +15,7 @@ namespace WZHi.Hangfire.Microbus.Integration.Infrastructure
 {
     public interface IHangfireMicrobusContext : IDisposable
     {
-        DbSet<MicrobusRequest> MicrobusRrequests { get; set; }
+        DbSet<MicrobusRequest> MicrobusRequests { get; set; }
 
         int SaveChanges();
         Task<int> SaveChangesAsync();
