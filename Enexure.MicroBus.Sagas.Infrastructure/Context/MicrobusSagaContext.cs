@@ -20,8 +20,7 @@ namespace Enexure.MicroBus.Sagas.Infrastructure.Context
             : base(options)
         {
             
-
-            Database.SetInitializer(new CreateDatabaseIfNotExists<MicrobusSagaContext>());
+            
 
         }
 

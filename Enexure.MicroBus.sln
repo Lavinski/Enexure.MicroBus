@@ -45,6 +45,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enexure.MicroBus.Sagas.Infr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WZHi.Hangfire.Microbus.Extensions", "src\WZHi.Hangfire.Microbus.Extensions\WZHi.Hangfire.Microbus.Extensions.csproj", "{6E05091D-782C-4AA8-8510-FDEE7DDC2EF0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LightInject", "LightInject", "{78D2B3BC-52CC-446C-8D4B-4C596E19D8D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enexure.MicroBus.LightInject", "Enexure.MicroBus.LightInject\Enexure.MicroBus.LightInject.csproj", "{8812FBD6-09BF-4F16-8391-32763EBF06A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enexure.MicroBus.LightInject.Tests", "Enexure.MicroBus.LightInject.Tests\Enexure.MicroBus.LightInject.Tests.csproj", "{71540D0F-7B17-45F9-A5EC-AA275664FC2B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -107,6 +113,14 @@ Global
 		{6E05091D-782C-4AA8-8510-FDEE7DDC2EF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E05091D-782C-4AA8-8510-FDEE7DDC2EF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E05091D-782C-4AA8-8510-FDEE7DDC2EF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8812FBD6-09BF-4F16-8391-32763EBF06A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8812FBD6-09BF-4F16-8391-32763EBF06A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8812FBD6-09BF-4F16-8391-32763EBF06A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8812FBD6-09BF-4F16-8391-32763EBF06A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71540D0F-7B17-45F9-A5EC-AA275664FC2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71540D0F-7B17-45F9-A5EC-AA275664FC2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71540D0F-7B17-45F9-A5EC-AA275664FC2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71540D0F-7B17-45F9-A5EC-AA275664FC2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -128,5 +142,8 @@ Global
 		{7CA1464D-7BC4-416F-A2F2-00CC93946730} = {ADB75E2F-8AC6-4FDD-B9BE-6AFBDE52EE02}
 		{9C9FB5A2-BA03-4EFF-8D0F-E53E48D107BC} = {ADB75E2F-8AC6-4FDD-B9BE-6AFBDE52EE02}
 		{6E05091D-782C-4AA8-8510-FDEE7DDC2EF0} = {5DB4A0D7-1F2C-47FD-8CA8-A6095B61DB46}
+		{78D2B3BC-52CC-446C-8D4B-4C596E19D8D5} = {2C0191A8-8BF9-486E-A837-0B23F44A7BE0}
+		{8812FBD6-09BF-4F16-8391-32763EBF06A8} = {78D2B3BC-52CC-446C-8D4B-4C596E19D8D5}
+		{71540D0F-7B17-45F9-A5EC-AA275664FC2B} = {78D2B3BC-52CC-446C-8D4B-4C596E19D8D5}
 	EndGlobalSection
 EndGlobal
