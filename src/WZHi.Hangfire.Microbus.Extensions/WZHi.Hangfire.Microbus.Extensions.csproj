@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Description>Hangfire Microbus Extension</Description>
+    <RootNamespace>WZHi.Hangfire.Microbus.Integration</RootNamespace>
+    <PackageId>WZHi.Hangfire.Microbus.Extension</PackageId>
+    <Authors>WZHi.Hangfire.Microbus.Extension</Authors>
+    <Company>WZHi.Hangfire.Microbus.Extension</Company>
+    <Product>WZHi.Hangfire.Microbus.Extension</Product>
+    <Version>1.0.0.4</Version>
+    <Copyright>WZHi</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Enexure.MicroBus" Version="3.5.0" />
+    <PackageReference Include="Hangfire" Version="1.6.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="1.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="1.1.2" />
+  </ItemGroup>
+
+
+
+</Project>

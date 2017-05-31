@@ -1,0 +1,44 @@
+﻿using System.Reflection;
+using System.Threading.Tasks;
+using FluentAssertions;
+using Xunit;
+
+namespace Enexure.MicroBus.LightInject.Tests
+{
+	public class LightInjectTypeScannerTests
+	{
+		class Event : IEvent { }
+
+		class EventHandler : IEventHandler<Event>
+		{
+			public Task Handle(Event @event) { return Task.FromResult(0); }
+		}
+
+		class Command : ICommand { }
+
+		class CommandHandler : ICommandHandler<Command>
+		{
+			public Task Handle(Command @event) { return Task.FromResult(0); }
+		}
+
+		class Result { }
+
+		class QueryAsync : IQuery<QueryAsync, Result> { }
+
+		class QueryHandler : IQueryHandler<QueryAsync, Result>
+		{
+			public Task<Result> Handle(QueryAsync @QueryAsync) { return Task.FromResult(new Result()); }
+		}
+
+		[Fact]
+		public void ScanAnAssemblyForHandlersTest()
+		{
+			var register = new BusBuilder().RegisterHandlers(
+				x => x.FullName.Contains("LightInjectTypeScannerTests"),
+				typeof(LightInjectTypeScannerTests).GetTypeInfo().Assembly);
+
+			register.MessageHandlerRegistrations.Count.Should().Be(3);
+
+		}
+	}
+}
